@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Tailwind Colors & Design System</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100 p-10">
+
+  <h1 class="text-4xl font-bold text-slate-900 mb-6">🎨 Tailwind Colors & Design System</h1>
+
+  <!-- Section 1: Texto -->
+   <nav>
+        <ul class="flex gap-6 mb-6 bg-white p-4 rounded-lg shadow">
+            <li><a href="../typography/02-typography.html" class="text-blue-600 hover:underline ">Tipografía</a></li>
+            <li><a href="../Margin-padding/spacing.html" class="text-blue-600 hover:underline">Margin & Padding</a></li>
+            <li><a href="../rounden-gradient-shadow/border-sombras.html" class="text-blue-600 hover:underline">Borders, Shadows & Gradients</a></li>
+        </ul>
+   </nav>
+  <section class="bg-white p-6 rounded-lg shadow mb-10">
+    <h2 class="text-2xl font-semibold text-blue-700 mb-4">Colores en Texto (`text-color`)</h2>
+
+    <p class="text-gray-500 mb-2">text-gray-500</p>
+    <p class="text-slate-700 mb-2">text-slate-700</p>
+    <p class="text-red-600 mb-2">text-red-600</p>
+    <p class="text-green-600 mb-2">text-green-600</p>
+    <p class="text-indigo-600 mb-2">text-indigo-600</p>
+  </section>
+
+  <!-- Section 2: Backgrounds -->
+  <section class="bg-white p-6 rounded-lg shadow mb-10">
+    <h2 class="text-2xl font-semibold text-purple-700 mb-4">Backgrounds (`bg-color`)</h2>
+
+    <div class="flex gap-4">
+      <div class="bg-blue-500 text-white p-4 rounded">bg-blue-500</div>
+      <div class="bg-green-500 text-white p-4 rounded">bg-green-500</div>
+      <div class="bg-red-500 text-white p-4 rounded">bg-red-500</div>
+    </div>
+  </section>
+
+  <!-- Section 3: Buttons Example -->
+  <section class="bg-white p-6 rounded-lg shadow mb-10">
+    <h2 class="text-2xl font-semibold text-red-700 mb-4">Botones con estados (hover, active, focus)</h2>
+
+    <div class="flex gap-4">
+
+      <button class="bg-blue-600 text-white px-5 py-2 rounded-lg hover:bg-blue-700 transition">
+        Guardar hover:bg-blue-700   
+      </button>
+
+      <button class="bg-green-600 text-white px-5 py-2 rounded-lg hover:bg-green-700 transition">
+        Confirmar hover:bg-green
+      </button>
+
+      <button class="bg-red-600 text-white px-5 py-2 rounded-lg hover:bg-red-700 transition">
+        Eliminar hover:bg-red-700 
+      </button>
+
+    </div>
+  </section>
+
+  <!-- Section 4: Utility: Border y Ring -->
+  <section class="bg-white p-6 rounded-lg shadow">
+    <h2 class="text-2xl font-semibold text-orange-600 mb-4">Borders & Focus Style</h2>
+
+    <input 
+      class="border border-gray-400 focus:ring-2 focus:ring-blue-500 focus:border-blue-600 p-3 rounded w-64"
+      placeholder="focus:ring  focus:ring-blue-500   "
+    />
+  </section>
+
+</body>
+</html>

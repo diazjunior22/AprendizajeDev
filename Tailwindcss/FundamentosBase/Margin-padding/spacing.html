@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Tailwind - Spacing (Margin, Padding & Gap)</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100 p-10 font-sans">
+   <nav>
+        <ul class="flex gap-6 mb-6 bg-white p-4 rounded-lg shadow">
+            <li><a href="../typography/02-typography.html" class="text-blue-600 hover:underline ">Tipografía</a></li>
+            <li><a href="../Margin-padding/spacing.html" class="text-blue-600 hover:underline">Margin & Padding</a></li>
+            <li><a href="../rounden-gradient-shadow/border-sombras.html" class="text-blue-600 hover:underline">Borders, Shadows & Gradients</a></li>
+        </ul>
+   </nav>
+  <!-- MARGIN -->
+  <section class="max-w-3xl mx-auto bg-white p-6 shadow rounded-xl space-y-4">
+    <h2 class="text-2xl font-bold">Margin (m)</h2>
+
+    <div class="bg-blue-300 text-white p-4">Sin margen</div>
+    <div class="bg-blue-500 text-white p-4 mt-4">Margin top → mt-4</div>
+    <div class="bg-blue-700 text-white p-4 my-6">Margin vertical → my-6</div>
+    <div class="bg-blue-900 text-white p-4 ml-8">Margin izquierda → ml-8</div>
+  </section>
+
+  <!-- PADDING -->
+  <section class="max-w-3xl mx-auto bg-white p-6 shadow rounded-xl space-y-4 mt-10">
+    <h2 class="text-2xl font-bold">Padding (p)</h2>
+     <p>PX P-Y </p>
+    <button class="bg-green-500 text-white p-2 rounded">p-2</button>
+    <button class="bg-green-600 text-white px-6 py-3 rounded">px-6 py-3</button>
+    <button class="bg-green-700 text-white pt-6 pb-1 rounded">pt-6 pb-1</button>
+        <button class="bg-green-700 text-white pt-6 pb-1 rounded">pt-6 pb-1</button>
+    <button class="bg-green-700 text-white px-6 pb-1 rounded">px-6  vertical y horiazontal</button>
+        <button class="bg-green-700 text-white py-6 pb-1 rounded text-center ">px-6   arriba y abajo </button>
+
+
+  </section>
+
+  <!-- GAP en FLEX -->
+  <section class="max-w-3xl mx-auto bg-white p-6 shadow rounded-xl space-y-4 mt-10">
+    <h2 class="text-2xl font-bold">Gap (flex / grid)</h2>
+
+    <div class="flex gap-4">
+      <div class="bg-red-400 w-16 h-16"></div>
+      <div class="bg-red-500 w-16 h-16"></div>
+      <div class="bg-red-600 w-16 h-16"></div>
+    </div>
+  </section>
+
+  <!-- WIDTH & HEIGHT -->
+  <section class="max-w-3xl mx-auto bg-white p-6 shadow rounded-xl space-y-4 mt-10">
+    <h2 class="text-2xl font-bold">Width & Height</h2>
+
+    <div class="bg-purple-400 w-full h-12 text-white flex items-center justify-center">
+      w-full
+    </div>
+
+    <div class="bg-purple-500 w-1/2 h-16 text-white flex items-center justify-center">
+      w-1/2
+    </div>
+
+    <div class="bg-purple-600 w-64 h-24 text-white flex items-center justify-center mt-4">
+      w-64 h-24
+    </div>
+
+    <div class="bg-purple-700 h-screen mt-4 text-white flex items-center justify-center">
+      h-screen → Altura pantalla completa
+    </div>
+  </section>
+
+</body>
+</html>
