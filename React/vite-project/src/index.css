@@ -1,0 +1,23 @@
+@import "tailwindcss";
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+
+@theme {
+  --bg-Neutral-900: hsl(227, 75%, 14%);
+  --bg-Neutral-800: hsl(226, 25%, 17%);
+  --bg-Neutral-700: hsl(225, 23%, 24%);
+  --bg-Neutral-600: hsl(226, 11%, 37%);
+  --bg-Neutral-300: hsl(0, 0%, 78%);
+  --bg-Neutral-200: hsl(217, 61%, 90%);
+  --bg-Neutral-100: hsl(0, 0%, 93%);
+  --bg-Neutral-0: hsl(200, 60%, 99%);
+}
+
+@utility light-gradient {
+  background: linear-gradient(180deg, #EBF2FC 0%, #EEF8F9 100%);
+}
+
+@utility dark-gradient {
+  background: linear-gradient(180deg, #040918 0%, #091540 100%);
+}
